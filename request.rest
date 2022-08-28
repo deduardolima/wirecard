@@ -1,0 +1,47 @@
+### Cadastro de usuario
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{   
+    "name": "Eduardo", 
+    "email":"eduardo100@email.com",
+    "cpf": "12345678910",
+    "password":"12345678"
+          
+}
+
+### Login do usuário
+# @name login
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email":"eduardo100@email.com",
+    "password":"12345678"
+}
+
+### Registrar pagamento
+
+POST http://localhost:3003/payment/create
+Authorization: {{login.response.body.token}}
+Content-Type: application/json
+
+{
+    "clientId": "123456789",
+    "amount": 3000,
+    "type":"credit card",
+    "cardHolderName":"DIEGO E LIMA",
+    "cardNumber":"4916 6705 5586 8558",
+    "cardExpirationDate":"08/2022",
+    "cardCvv": "560"
+}
+
+### Pega informações de pagamento por ID
+
+GET http://localhost:3003/payment/getstatus
+Authorization: {{login.response.body.token}}
+Content-Type: application/json
+
+{
+   "payment_id":"0f04360f-e4a1-415a-90ed-4a882b44a167"
+}
