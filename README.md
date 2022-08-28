@@ -39,7 +39,7 @@ A Api foi construida em **NodeJS** utilizando **TypeScript**, o FrameWork **Expr
 
 <h2 id="postmam"> <img src="https://user-images.githubusercontent.com/98994187/182048033-f81fac19-1c26-45c0-96da-a5ffbc0defec.svg" height="20" width="20" alt="javascript logo"  /> Postmam</h2>
 
-Voçê pode testar a API com Postman.
+Você pode testar a API com Postman.
 - O Postman é um API Client que facilita aos desenvolvedores criar, compartilhar, testar e documentar APIs. Isso é feito, permitindo aos usuários criar e salvar solicitações HTTP e HTTPs simples e complexas, bem como ler suas respostas.
 - [Download do Postamam](https://www.postman.com/downloads/)
 
